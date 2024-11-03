@@ -8,29 +8,27 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
+import zustand from "./tech/zustand.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import tailwind from "./tech/tailwind.png";
+import mongodb from "./tech/mongodb.png";
+import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
-import zustand from "./tech/zustand.jpg";
+import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import vue3 from "./tech/vue3.png";
-import nuxt3 from "./tech/nuxt3.png";
-import photoshop from "./tech/photoshop.jpg";
-import filezilla from "./tech/filezilla.png";
+import threejs from "./tech/threejs.svg";
+
+import meta from "./company/meta.png";
 import roiup from "./company/roiup.png";
-import shopify from "./company/shopify.png";
 import metamyanmar from "./company/metamyanmar.png";
 import umg from "./company/umg.png";
 
-import teatalk from "./teatalk.png";
+import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
 
 export {
   logo,
@@ -42,25 +40,23 @@ export {
   menu,
   close,
   css,
-  docker,
+  zustand,
   figma,
   git,
   html,
   javascript,
+  mongodb,
+  nodejs,
   reactjs,
   redux,
-  zustand,
-  vue3,
-  nuxt3,
-  filezilla,
   tailwind,
   typescript,
-  photoshop,
+  threejs,
+  meta,
   roiup,
-  shopify,
   metamyanmar,
   umg,
-  teatalk,
+  carrent,
   jobit,
   tripguide,
 };

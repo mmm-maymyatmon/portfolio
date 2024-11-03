@@ -9,20 +9,20 @@ import {
   css,
   reactjs,
   redux,
-  zustand,
-  vue3,
-  nuxt3,
-  photoshop,
   tailwind,
+  nodejs,
+  mongodb,
   git,
   figma,
-  roiup,
+  zustand,
+  meta,
   metamyanmar,
   umg,
-  teatalk,
+  roiup,
+  carrent,
   jobit,
   tripguide,
-  filezilla,
+  threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -54,7 +54,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "WordPress Developer",
+    title: "CMS Developer",
     icon: creator,
   },
 ];
@@ -68,6 +68,7 @@ const technologies = [
     name: "CSS 3",
     icon: css,
   },
+  
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -84,26 +85,22 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
+  
+  {
+    name: "zustand",
+    icon: zustand,
+  },
   {
     name: "Redux Toolkit",
     icon: redux,
   },
   {
-    name: "Zustand",
-    icon: zustand,
-  },
-
-  {
-    name: "Vue3",
-    icon: vue3,
+    name: "Node JS",
+    icon: nodejs,
   },
   {
-    name: "Nuxt3",
-    icon: nuxt3,
-  },
-  {
-    name: "Filezilla",
-    icon: filezilla,
+    name: "MongoDB",
+    icon: mongodb,
   },
   {
     name: "git",
@@ -113,25 +110,23 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "photoshop",
-    icon: photoshop,
-  },
 ];
 
 const experiences = [
   {
     title: "Senior Web Developer",
-    company_name: "Meta Team Myanmar",
+    company_name: "Meta Team Myanmar (Japan Company)",
     icon: metamyanmar,
     iconBg: "#383E56",
     date: "Jan 2020 - Jan 2023",
     points: [
-      "Created and modified custom WordPress themes to meet client needs, enhancing design, layout, and features.",
-      "Collaborated with UI design teams to implement visually appealing designs that improve user experience.",
-      "Communicated with Japanese clients to gather requirements and provide timely updates.",
-      "Customized CSS styles, templates, and integrated plugins to enhance functionality, including contact forms and SEO optimization.",
-      "Developed responsive web applications using React.js, ensuring optimal performance and cross-browser compatibility."
+      "Created custom WordPress themes and tailored existing ones to meet specific client needs, focusing on design, layout, and feature enhancements.",
+      "Collaborated with UI design teams to produce visually appealing and user-friendly experiences.",
+      "Communicated directly with Japanese clients to understand their requirements and provide timely updates.",
+      "Customized CSS, modified templates, and integrated plugins for enhanced functionality, including contact forms, sliders, galleries, and SEO optimization.",
+      "Ensured cross-browser compatibility across Chrome, Firefox, Safari, and Internet Explorer.",
+      "Maintained effective communication throughout the development process to ensure client satisfaction.",
+      
     ],
   },
   {
@@ -139,29 +134,29 @@ const experiences = [
     company_name: "UMG Idealab Myanmar",
     icon: umg,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Oct 2023",
+    date: "Jan 2023 - Nov 2023",
     points: [
-      "Participated in discussions with business and development teams to define clear objectives for a large-scale social media platform.",
-      "Developed the frontend using Nuxt 3 and created an admin dashboard with Vue 3 for efficient content management.",
-      "Collaborated with UI/UX teams and analysts to gather requirements and ensure project alignment.",
-      "Utilized HTML, CSS, JavaScript, and Bootstrap to translate design mockups into responsive, cross-browser compatible code.",
-      "Improved code organization by fixing conflicts and separating components, integrating frontend with Laravel Blade for enhanced user experience."
+      "Actively engaged with business and development teams to define clear project objectives for a large-scale social media platform.",
+      "Developed the frontend for a large-scale social media platform using Nuxt 3 and created a Vue 3 admin dashboard for content management.",
+      "Collaborated with UI/UX teams, business stakeholders, system analysts, and developers to establish project objectives and gather requirements.",
+      "Utilized HTML, CSS, JavaScript, and Bootstrap to convert design mockups into responsive, cross-browser-compatible code.",
+      "Resolved code conflicts and modularized components to enhance code organization and maintainability.",
+      "Integrated frontend and backend functionalities to improve overall user experience."
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "ROIUP STUDIOS CO., LTD.",
+    title: "Full stack Developer (Freelance)",
+    company_name: "Roiup Studios Co., Ltd. (Chiang Mai, Thailand)",
     icon: roiup,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - July 2023",
+    iconBg: "#383E56",
+    date: "Feb 2024 - Oct 2024",
     points: [
-      "Collaborated with senior developers to develop and maintain web applications, ensuring high performance and responsiveness across both front-end and back-end technologies.",
-      "Embraced challenges by learning and implementing new technologies, enhancing both skill set and knowledge base.",
-      "Wrote and debugged code to ensure product functionality and quality, significantly contributing to overall project success.",
-      "Demonstrated the ability to meet tight deadlines while maintaining composure in high-pressure situations.",
-      "Assisted operations by identifying, researching, and resolving performance and production issues, ensuring smooth application functionality."
+      "Collaborated with senior developers to build and maintain web applications, leveraging both front-end and back-end technologies for optimal performance and responsiveness.",
+      "Embraced new technologies to enhance skills and expand knowledge.",
+      "Successfully met tight deadlines while maintaining composure under pressure in critical situations.",
+      "Supported operations by identifying, researching, and resolving performance and production issues to ensure smooth application functionality.",
     ],
-  },
+  }
 ];
 
 const testimonials = [
@@ -193,9 +188,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Teatalk Platform",
+    name: "Car Rent",
     description:
-      "A vibrant social media platform that connects users, allowing them to share experiences, engage in conversations, and build communities. Similar to Facebook, Teatalk offers features for posting updates, sharing photos, and messaging friends, fostering meaningful interactions and connections among its users.",
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
         name: "react",
@@ -210,7 +205,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: teatalk,
+    image: carrent,
     source_code_link: "https://github.com/",
   },
   {

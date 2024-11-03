@@ -9,35 +9,23 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-  <ambientLight intensity={1.3} color="#fff" />
-
-  <hemisphereLight 
-    intensity={0.6} 
-    skyColor="#fff" 
-    groundColor="#b3daff" 
-  />
-
-  <directionalLight 
-    intensity={1.2} 
-    color="#fff" 
-    position={[-3, 3, 0]} 
-    castShadow 
-  />
-
-  <pointLight 
-    intensity={0.8} 
-    color="#fff" 
-    position={[2, 1, 1]} 
-  />
-
-  <primitive
-    object={computer.scene}
-    scale={isMobile ? 0.7 : 0.75}
-    position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-    rotation={[-0.01, -0.2, -0.1]}
-  />
-</mesh>
-
+      <hemisphereLight intensity={0.15} groundColor='white' />
+      <spotLight
+        position={[-20, 50, 10]}
+        angle={0.2}
+        penumbra={1}
+        intensity={1}
+        castShadow
+        shadow-mapSize={1024}
+      />
+      <pointLight intensity={1} />
+      <primitive
+        object={computer.scene}
+        scale={isMobile ? 0.7 : 0.75}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        rotation={[-0.01, -0.2, -0.1]}
+      />
+    </mesh>
   );
 };
 
@@ -45,10 +33,13 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
 
+    // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
 
+    // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
